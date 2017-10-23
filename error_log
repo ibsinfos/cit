@@ -1,0 +1,14 @@
+[14-Nov-2016 09:51:49 UTC] PHP Fatal error:  Call to a member function get_tutor_details() on null in /home/cgusaindwebapp/public_html/application/controllers/Tutor_dashboard.php on line 140
+[14-Nov-2016 09:52:10 UTC] PHP Fatal error:  Call to a member function get_tutor_details() on null in /home/cgusaindwebapp/public_html/application/controllers/Tutor_dashboard.php on line 140
+[24-Nov-2016 07:34:21 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT), expecting ',' or ';' in /home/cgusaindwebapp/public_html/application/controllers/Tutor_dashboard.php on line 384
+[24-Nov-2016 13:32:52 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/cgusaindwebapp/public_html/application/models/Tutors_model.php on line 103
+[24-Nov-2016 13:34:38 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/cgusaindwebapp/public_html/application/models/Tutors_model.php on line 103
+[24-Nov-2016 13:36:00 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/cgusaindwebapp/public_html/application/models/Tutors_model.php on line 132
+[24-Nov-2016 13:36:32 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/cgusaindwebapp/public_html/application/models/Tutors_model.php on line 132
+[25-Nov-2016 13:04:29 UTC] PHP Fatal error:  Call to a member function getUser() on null in /home/cgusaindwebapp/public_html/application/controllers/Hauth.php on line 56
+[25-Nov-2016 13:07:52 UTC] PHP Fatal error:  Call to a member function getUser() on null in /home/cgusaindwebapp/public_html/application/controllers/Hauth.php on line 56
+[25-Nov-2016 14:37:16 UTC] PHP Fatal error:  Cannot use object of type Hybrid_User_Profile as array in /home/cgusaindwebapp/public_html/application/controllers/Hauth.php on line 51
+[25-Nov-2016 14:39:23 UTC] PHP Parse error:  syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/cgusaindwebapp/public_html/application/controllers/Hauth.php on line 48
+[28-Nov-2016 10:14:38 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/cgusaindwebapp/public_html/application/views/course_details_view.php on line 229
+[28-Nov-2016 12:43:45 UTC] PHP Parse error:  syntax error, unexpected '$order_type' (T_VARIABLE), expecting ')' in /home/cgusaindwebapp/public_html/application/models/admin/Courses_model.php on line 17
+[29-Nov-2016 00:00:00 UTC] CSRF state token does not match one provided.
