@@ -445,7 +445,7 @@ class Courses extends CI_Controller
 			$data_form=array('cd_name'=>$uname,'cd_email'=>$email,'cd_phone'=>$mobile,'cd_des'=>$c_message);
 			$this->Courses_model->insert_course_inquiry($data_form);
 			$data['res_setting']=$this->User_model->get_account_settings();
-			$to_email =$data['res_setting']->email ;			
+			 $to_email =$data['res_setting']->email ;
 			$from_email="admin@chicagoinstituteoftechnology.com";
 			$subject="Course details page Inquiry Form";
 			$message="			

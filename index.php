@@ -1,4 +1,11 @@
 <?php
+/*echo '<pre>';
+ print_r($_SERVER);
+echo '</pre>';*/
+if(!isset($_SERVER['HTTPS'])){
+    $reurl='https://'.$_SERVER['HTTPS'].'/'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+header('location:'.$reurl);
+}
 /**
  * CodeIgniter
  *

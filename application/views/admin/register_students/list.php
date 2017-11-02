@@ -45,6 +45,7 @@
                                     <thead>
                                         <tr>
 										    <th>S.No</th>
+										    <th>Name</th>
                                             <th>Username</th>
 											<th>Email</th>
 											<th>Mobile</th>
@@ -58,8 +59,10 @@
 			   $i=1;
               foreach($register_students as $row)
               {
-					echo '<tr>';
+				//print_r($row);
+                  echo '<tr>';
 					echo '<td>'.$i++.'</td>';
+					echo '<td>'.ucwords($row['std_name']).'</td>';
 					echo '<td>'.$row['std_username'].'</td>';
 					echo '<td>'.$row['std_email'].'</td>';
 					echo '<td>'.$row['std_mobile'].'</td>';

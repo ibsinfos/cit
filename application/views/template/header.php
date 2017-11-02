@@ -66,6 +66,7 @@
 <script src="<?php echo base_url(); ?>assets/scripts/modernizr.js"></script>
 <script src="<?php echo base_url(); ?>assets/scripts/bootstrap.min.js"></script>
 </head>
+
 <body class="wp-smartstudy">
 <div class="wrapper"> 
 	<!-- Side Menu Start -->
@@ -119,7 +120,7 @@
             <li><a href="<?php echo base_url(); ?>careers">Careers</a></li>
             <li><a href="<?php echo base_url(); ?>live_projects">Live Projects</a></li>
             <li><a href="<?php echo base_url(); ?>internship">Internship</a></li> 
-                       <li><a href="#">Blog</a></li>                            
+                       <li><a href="#">Blog</a></li>
             <!--<li><a href="<?php echo base_url(); ?>blog">Blog</a></li>-->
             <!--<li><a href="faqs.php">Faq</a></li>-->	
             <li><a href="<?php echo base_url(); ?>contact_us">Contact Us</a></li>	       
@@ -487,7 +488,7 @@ echo '<input type="hidden" id="qi_page_name" name="qi_page_name" value="'.$this-
                         <ul class="top-nav nav-right">
                             <li><a href="<?php echo base_url(); ?>about_us">About Us</a></li>
                             <li><a href="<?php echo base_url(); ?>contact_us">Contact Us</a></li>
-                                          <li><a href="#">Blog</a></li> 
+                                         <!-- <li><a href="#">Blog</a></li> -->
                             <!--<li><a href="<?php echo base_url(); ?>blog">Blog</a></li>-->
                             <!--<li><a href="faqs.php">Faq</a></li> -->
                         </ul>

@@ -413,24 +413,13 @@ class Home extends CI_Controller
 				<tr>
 				  <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;text-align:justify;" valign="top">
 					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Dear '.$std_name.',</p>
-					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for your interest with Chicago Institute of Technology. All of your information will be kept secure and private. </p>
-					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">
-					This email confirms your registration was successful. You can now select and register courses and make a payment to secure your seat in training by exploring courses from our website. We offer wide range of Technology and Business education which was designed by our Highly experienced Instructors who are in the industry for more than 15 years. We also offer career counseling at the end of every course and offer our students to practice in our live projects and chance to get internship in the Companies like DigiTek IT Inc, Shear Circle LLC.</p>
-					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; text">
-					Please contact one of our highly experienced Admission Advisor by calling 630-237-4456 or emailing at trainings@chicagoinstituteoftechnology.com and we can help you select our course that can excel your career.</p>
+					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for your interest with Chicago Institute of Technology. All of your information will be kept secure and private.</p>
+					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">This email confirms your registration was successful. You can now select, and register courses, and make a payment to secure your seat in training by exploring courses from our website. We offer wide range of Technology and Business education which is designed by our highly experienced Instructors who are in the industry for more than 15 years. We also offer career counselling at the end of every course and offer our students to practice in our live projects and chance to get internship in the companies like DigiTek IT Inc, Shear Circle LLC.</p>
+					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; text">Please contact one of our highly experienced Admission Advisor by calling +1 312-238-9309 or emailing at trainings@chicagoinstituteoftechnology.com and we can help you select our course that can excel your career.</p>
 					<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">We look forward to speaking with you and helping you.</p>
-				<p style="text-align:justi">Sincerely,<br />
-				Chicago Institute of Technology<br />
-				109 Fairfield Way, Suite 303<br />
-				Bloomingdale, IL-60108<br />
-				U.S.A.<br />
-				Tel: 630-237-4456<br />
-				info@chicagoinstituteoftechnology.com<br />
-				www.chicagoinstituteoftechnology.com</p>
-					
-				  </td>
+					<p style="text-align:justi">Sincerely,<br />Chicago Institute of Technology<br />113 Fairfield Way, Suite 204 <br />Bloomingdale, IL 60108<br />U.S.A. <br /><!--	Tel: 630-237-4456<br />-->Phone: +1 312-238-9309 <br />Email: info@chicagoinstituteoftechnology.com <br />Website: www.chicagoinstituteoftechnology.com</p></td>
 				</tr>
-			  </table>
+			  </table> 
 			</td>
 			</tr>
 

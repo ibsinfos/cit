@@ -123,13 +123,14 @@
 														<?php $tt_img=$row->tutor_image!='' ? $row->tutor_image:'no_tutor.jpg'; ?>
                                                             <img src="<?php echo base_url(); ?>images/tutor/<?php echo $tt_img; ?>" alt=""/>                                                        </figure><?php */?>
                                                         <div class="edu2_cur_ftr_strip">
-                                                        <?php if(!$this->session->userdata('cit_country')){ ?>
+                                                            <a href="<?php echo base_url(); ?>courses/details/<?php echo $row->batch_id?>#entryrequirment">Inquiry For Price</a>
+                                                        <?php /*if(!$this->session->userdata('cit_country')){ ?>
 												<span>$<?php echo $row->cb_price; ?></span>
 												<?php }else if(ucfirst($this->session->userdata('cit_country'))=='India'){ ?>
 												<span>Rs.<?php echo $row->cb_price_rs; ?></span>
 												<?php }else{ ?>
 												<span>$<?php echo $row->cb_price; ?></span>
-												<?php } ?>
+												<?php }*/ ?>
                                                             <?php /*?><h6><?php echo $row->tutor_name; ?></h6><?php */?>
 															<?php /* ?>
                                                             <div class="rating">

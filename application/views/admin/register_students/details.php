@@ -43,6 +43,13 @@ echo validation_errors();
 echo form_open_multipart('admin/register_students/update/'.$this->uri->segment(4).'', $attributes);
 ?>
 <p class="text-muted m-b-20"> <a href="<?php echo base_url(); ?>admin/register_students" class="btn btn-success btn-rounded" > Back</a></p>
+    <div class="form-group">
+        <label class="col-md-12">    <b>Name :</b> <?php  echo ucwords($register_students[0]['std_name']); ?></label>
+
+
+
+
+    </div>
                                 <div class="form-group">
                                 <label class="col-md-12">    <b>User Name :</b> <?php  echo $register_students[0]['std_username']; ?></label>
                                     

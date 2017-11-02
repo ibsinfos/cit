@@ -57,7 +57,7 @@
                 <li role="presentation" class="active"><a href="#coursedetails" aria-controls="coursedetails" role="tab" data-toggle="tab">Course Details</a></li>
                 <li role="presentation"><a href="#coursestructure" aria-controls="coursestructure" role="tab" data-toggle="tab">Course Highlights</a></li>                
                 <!--<li role="presentation"><a href="#placements" aria-controls="placements" role="tab" data-toggle="tab">Placements</a></li>-->
-                <li role="presentation"><a href="#entryrequirment" aria-controls="entryrequirment" role="tab" data-toggle="tab">Send Enquiry</a></li>
+                <li role="presentation"><a href="#entryrequirment" aria-controls="entryrequirment" role="tab" data-toggle="tab">Send Inquiry</a></li>
               </ul>
               <!-- Tab panes -->
               <div class="tab-content">
@@ -122,7 +122,7 @@
                   <!-- COURSES DETAIL DES START -->
                   <div class="kf_courses_detail_des">
                     <div class="course_heading">
-                      <h3>Send Enquiry</h3>
+                      <h3>Send Inquiry</h3>
                     </div>                  
                   </div>
                   <!-- COURSES DETAIL DES END -->
@@ -144,7 +144,7 @@
                                             <i class="fa fa-phone"></i>
                                         </div>
                                         <div class="inputs_des des_3">
-                                            <textarea name="cd_des" required ></textarea>
+                                            <textarea name="cd_des" required >I  would like to get more information on <?php echo $courses_details->course_name; ?> course</textarea>
                                             <i class="fa fa-comments-o"></i>
                                         </div>
                                         <div class="inputs_des des_2">
@@ -175,7 +175,7 @@
           <div class="kf-sidebar">
             <!--KF_SIDEBAR_SEARCH_WRAP START-->
             <div class="sidebar_register_wrap"> 
-<?php
+<?php /*
 if(!$this->session->userdata('user_student_is_logged_in'))
 {
 	echo '<a class="apply" data-target="#cs-login" href="#" data-toggle="modal">Apply Now</a>';
@@ -183,21 +183,23 @@ if(!$this->session->userdata('user_student_is_logged_in'))
 else
 {
 	echo '<a class="apply"  href="'.base_url().'courses/payment_gateway/'.$courses_details->batch_id.'" >Apply Now</a>';
-}
+}*/
 ?>
 			
               <ul class="sidebar_register_des" style="border-bottom:1px solid #e0e0e0; padding-bottom:20px; margin-bottom:10px;">
-                <li>Price : 
-<?php if(!$this->session->userdata('cit_country')){ ?>
+                <li>Price :
+                   <!-- <a href="<?php /*echo base_url(); */?>courses/details/<?php /*echo $this->uri->segment(3); */?>#entryrequirment">Inquiry</a>-->
+                    <a href="javascript:void(0)" onclick="navopnew('entryrequirment')">Inquiry</a>
+<?php /*if(!$this->session->userdata('cit_country')){ ?>
 <span class="green">$<?php echo $courses_details->cb_price; ?></span>
 <?php }else if(ucfirst($this->session->userdata('cit_country'))=='India'){ ?>
 <span class="green">Rs.<?php echo $courses_details->cb_price_rs; ?></span>
 <?php }else{ ?>
 <span class="green">$<?php echo $courses_details->cb_price; ?></span>
-<?php } ?>
+<?php }*/ ?>
 </li>
-                <li>Total Approximate Hours : <?php echo $courses_details->cb_time; ?></li>
-                <li>Total Duration : <?php echo $courses_details->cb_duration; ?> Days</li> 
+               <!-- <li>Total Approximate Hours : <?php /*echo $courses_details->cb_time; */?></li>
+                <li>Total Duration : <a href="javascript:void(0)" onclick="navopnew('entryrequirment')">Enquiry</a></li>-->
                <li>Course Type: <?php
 			   $arr_coursetype=unserialize($courses_details->cb_course_type); 
 			   if(!empty($arr_coursetype))
@@ -253,10 +255,10 @@ else
               </ul>  
 <?php  
 $day_tt=json_decode($courses_details->cb_day_table);
-?>			  
-              <h5 style="padding-bottom:10px;">Course Timings</h5>
-              <table class="table table-bordered ctimings"> 
-       <?php if(in_array('Sunday',$day_tt->batch_days)){ ?>              
+?>
+                <!--<h5 style="padding-bottom:10px;">Course Timings</h5>
+              <table class="table table-bordered ctimings">-->
+       <?php /*if(in_array('Sunday',$day_tt->batch_days)){ ?>
                 <tr>
                   <td>Sun</td>
                   <td><?php echo $day_tt->day_time_open1; ?> – <?php echo $day_tt->day_time_close1; ?></td>
@@ -298,9 +300,9 @@ $day_tt=json_decode($courses_details->cb_day_table);
                   <td>Sat</td>
                   <td><?php echo $day_tt->day_time_open7; ?> – <?php echo $day_tt->day_time_close7; ?></td>
                 </tr>
-	   <?php } ?>
+	   <?php }*/ ?>
                 
-         </table>
+         <!--</table>-->
             </div>
             <!--KF_SIDEBAR_SEARCH_WRAP END-->
             <!--KF_SIDEBAR_ARCHIVE_WRAP START-->
@@ -358,14 +360,9 @@ if(!empty($arr_couurse_type))
   </div>
   <div class="edu2_cur_des_ft">
     <div class="edu2_cur_ftr_strip">
-	<span>
-	<?php if(!$this->session->userdata('cit_country')){ ?>
-$<?php echo $rowlc->cb_price; ?>
-<?php }else if(ucfirst($this->session->userdata('cit_country'))=='India'){ ?>
-Rs.<?php echo $rowlc->cb_price_rs; ?>
-<?php }else{ ?>
-$<?php echo $rowlc->cb_price; ?>
-<?php } ?></span> </div>
+        <a href="<?php echo base_url(); ?>courses/details/<?php echo $rowlc->batch_id; ?>#entryrequirment">Inquiry For Price</a>
+        
+    </div>
   </div>
 </div>
 <?php } ?>
@@ -447,6 +444,27 @@ $(document).ready(function() {
       return true;
     }
   });
+
+    var url = document.location.toString();
+    if (url.match('#')) {
+        $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+    }
+
+// Change hash for page-reload
+    $('.nav-tabs a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+    })
+
 });
+
+function navopnew(navid){
+    $('.nav-tabs a[href="#' +navid + '"]').tab('show');
+
+// Change hash for page-reload
+    $('.nav-tabs a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+    })
+}
+
 </script>
 <?php include 'template/footer.php'?>

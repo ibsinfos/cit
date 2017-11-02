@@ -46,11 +46,11 @@
 								<h5>Information</h5>
 								<ul>
 									<li><a href="<?php echo base_url(); ?>about_us">About us</a></li>
-                                                         <li><a href="#">Blog</a></li>
+                                                         <!--<li><a href="#">Blog</a></li>-->
 									<!--<li><a href="<?php echo base_url(); ?>blog">Blog</a></li>-->
 									<!--<li><a href="faqs.php">FAQ</a></li>-->
 									<!--<li><a href="<?php echo base_url(); ?>latest_information">Latest Information</a></li>-->
-<li><a href="#">Latest Information</a></li>
+<!--<li><a href="#">Latest Information</a></li>-->
                                     <li><a href="<?php echo base_url(); ?>home/terms_and_conditions">Terms &amp; Conditions</a></li>
                                     <li><a href="<?php echo base_url(); ?>home/refund_policy">Refund Policy</a></li>
                                     <li><a href="<?php echo base_url(); ?>home/privacy_statement">Privacy Statement</a></li>									
@@ -87,10 +87,10 @@
 								<h5>Follow Us</h5>
 								<ul class="cont_socil_meta">
                                     <li><a href="<?php echo $res_setting->facebook; ?>" ><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="<?php echo $res_setting->twitter; ?>" ><i class="fa fa-twitter"></i></a></li>
+                                   <!-- <li><a href="<?php /*echo $res_setting->twitter; */?>" ><i class="fa fa-twitter"></i></a></li>-->
                                     <li><a href="<?php echo $res_setting->google; ?>" ><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="<?php echo $res_setting->linkedin; ?>" ><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="<?php echo $res_setting->youtube; ?>" ><i class="fa fa-youtube"></i></a></li>
+                                  <!--  <li><a href="<?php /*echo $res_setting->linkedin; */?>" ><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="<?php /*echo $res_setting->youtube; */?>" ><i class="fa fa-youtube"></i></a></li>-->
                                 </ul>
 							</div>
 					  </div>
