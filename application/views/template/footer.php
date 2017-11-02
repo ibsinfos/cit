@@ -85,8 +85,8 @@
 						<div class="col-md-3">
 							<div class="widget">
 								<h5>Follow Us</h5>
-								<ul class="cont_socil_meta">
-                                    <li><a href="<?php echo $res_setting->facebook; ?>" ><i class="fa fa-facebook"></i></a></li>
+								<ul class="cont_socil_meta" >
+                                    <li style="margin-left:12px !important;"><a href="<?php echo $res_setting->facebook; ?>" ><i class="fa fa-facebook"></i></a></li>
                                    <!-- <li><a href="<?php /*echo $res_setting->twitter; */?>" ><i class="fa fa-twitter"></i></a></li>-->
                                     <li><a href="<?php echo $res_setting->google; ?>" ><i class="fa fa-google-plus"></i></a></li>
                                   <!--  <li><a href="<?php /*echo $res_setting->linkedin; */?>" ><i class="fa fa-linkedin"></i></a></li>

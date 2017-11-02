@@ -96,7 +96,7 @@
                       <thead>
                         <tr>
                           <th>Lesson</th>
-                          <th>Aproximate Time</th>
+                         <!-- <th>Aproximate Time</th>-->
                         </tr>
                       </thead>
                       <tbody>
@@ -109,7 +109,7 @@
 
 <tr>
 <td><?php echo $arr_lesson_name[$i]; ?></td>
-<td><?php echo $arr_lesson_time[$i]; ?></td>
+<!--<td><?php /*echo $arr_lesson_time[$i]; */?></td>-->
 </tr>
  <?php } ?> 
                       </tbody>

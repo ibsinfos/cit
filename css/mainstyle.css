@@ -4768,6 +4768,7 @@ a.apply:hover{
 .cont_socil_meta li {
     float: left;
     margin-right: 10px;
+
 }
 .cont_socil_meta li a {
     border: 1px solid #999999;
@@ -4778,6 +4779,7 @@ a.apply:hover{
     line-height: 35px;
     text-align: center;
     width: 37px;
+
 }
 .cont_socil_meta li a:hover{
 	color: #fff;
